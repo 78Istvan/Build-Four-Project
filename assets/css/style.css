@@ -46,15 +46,15 @@ body {
     padding-top: 15px;
 }
 }
-/*
-@media only screen and (min-width: 600px) {
-.img-cont {
-        padding-top: 2rem;
-    }
-.head-text {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+/*introduction*/
+.intro-head .intro-text {
+    color: #F1C40F;
 }
-
+.intro-box, .intro-text {
+    text-align: center;
+    color: #F1C40F;
 }
-*/
+/*contact*/
+.form-box {
+    color: #F1C40F;
+}
