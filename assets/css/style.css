@@ -6,6 +6,7 @@ body {
     padding: 0;
     font-family: 'Fira Sans', sans-serif;
     background-color: #303FDC ;
+    box-sizing: border-box;
 }
     
 .head-text {
@@ -45,6 +46,11 @@ body {
 .img-cont {
     padding-top: 15px;
 }
+.game-card {
+    display: block;
+    position: relative;
+    text-align: center;
+}
 }
 /*introduction*/
 .intro-head .intro-text {
@@ -58,7 +64,27 @@ body {
 .form-box {
     color: #F1C40F;
 }
-/*game*/#
-.game-navi a {
-    display: inline;
+/*game*/
+.back-card {
+    background-color: #F1C40F;
+    height: 6rem;
+    width: 6rem;
+    text-align: center;
+}
+.first-line {
+    justify-content: center;
+}
+.game-btn {
+    margin-bottom: 1rem;
+}
+.front-card {
+     background-color: #F1C40F;
+    height: 6rem;
+    width: 6rem;
+}
+.me-3 {
+    margin-right: 0!important;
+}
+.col-xs-2 .col-sm-2 {
+    padding-right: 0!important;
 }
