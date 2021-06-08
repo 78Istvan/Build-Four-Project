@@ -58,3 +58,7 @@ body {
 .form-box {
     color: #F1C40F;
 }
+/*game*/#
+.game-navi a {
+    display: inline;
+}
