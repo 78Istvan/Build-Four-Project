@@ -7,9 +7,11 @@ body {
     font-family: 'Fira Sans', sans-serif;
     background-color: #303FDC ;
     height: 100vh;
-    
+    display: flex;
 }
-    
+.main-container {
+    margin: auto;
+}
 .head-text {
     text-align: center;
     color: #F1C40F;
