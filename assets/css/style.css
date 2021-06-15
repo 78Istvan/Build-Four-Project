@@ -63,9 +63,12 @@ body {
     align-items: center;
    
 }
+.card {
+    max-width: 250px;
+}
 img {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
 }
 }
 /*introduction*/
@@ -98,7 +101,7 @@ img {
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    max-width: 260px;
+    max-width: 200px;
    
 }
 .front-card {
@@ -121,4 +124,8 @@ img {
 }
 .card.flip {
     transform: rotateY(180deg);
+}
+.reset-button {
+    color: #F1C40F;
+    text-align: center;
 }
