@@ -125,7 +125,7 @@ img {
 .card.flip {
     transform: rotateY(180deg);
 }
-.reset-button {
-    color: #F1C40F;
-    text-align: center;
+
+.game-buttons {
+    justify-content: center;
 }

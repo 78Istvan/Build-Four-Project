@@ -23,26 +23,21 @@
               <div class="col">
                     <div id="navi">
                         <div class="container game-btn">
-                            <div class="row">
-                                <div class="col-md-3"><div class="navi"><a href="index.html"><button type="button" class="btn btn-danger drive">Home</button></a></div></div>
-                                <div class="col-md-3"><div class="navi"><a href="introduction.html"><button type="button" class="btn btn-success drive">Introduction</button></a></div></div>
-                                <div class="col-md-3"><div class="navi"><a href="game.html"><button type="button" class="btn btn-secondary drive">Game</button></a></div></div>
-                                <div class="col-md-3"><div class="navi"><a href="contact.html"><button type="button" class="btn btn-info drive">Contact</button></a></div></div>
+                            <div class="row game-buttons">
+                                <div class="col-md-3"><div class="navi"><a href="index.html"><button type="button" class="btn btn-danger drive">QuiteGame</button></a></div></div>
+                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-success drive" onclick="resetGame()" class="reset-button">Reset</button></div></div>
+                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-info drive"><div>Moves: <span class="moves"></span></div></button></div></div>
                            </div>
                            </div>
                        </div>
                    </div>
                 </div>
             </div>
-            <div>Moves: <span class="moves"></span></div>
-            <div class="container-game" id="game-container"></div>
+         <div class="container-game" id="game-container"></div>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button onclick="resetGame()" class="reset-button">Reset</button>
-                        <h3 class="reset-button">Moves</h3>
-                     
-                    </div>
+                        </div>
                 </div>
             </div>
         </section>

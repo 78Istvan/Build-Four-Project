@@ -80,7 +80,7 @@ function unflipCards() {
         cardOne.parent().removeClass('flip');
         cardTwo.parent().removeClass('flip');
         lockBoard = false;
-    }, 1500);
+    }, 1000);
 }
 
 function resetGame() {
