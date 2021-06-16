@@ -1,28 +1,66 @@
 //flip the cards//
-const cards = document.querySelectorAll('.card');
+let cards = [];
 
 let hasFlippedCard = false;
 let lockBoard = false;
-let firstCard, secondCard;
+let firstCard, secondCard, moveCount=0;
 
-function flipCrad() {
+(function createCardsArray() {
+    let flipCards = [],
+        duplicates = [];
+    for(let x=1; 8 >= x; x++) {
+        flipCards.push('<div class="card" data-name="space-skin">' +
+                        '<img class="front-card" data-source="'+ x +'" src="assets/images/battleland-'+ x +'.jpg" alt="space-skin">' +
+                        '<img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">' +
+                        '</div>');
+    }
+
+    for(var i = 0; i< flipCards.length;++i){
+        duplicates.push(flipCards[i]);
+        duplicates.push(flipCards[i]);
+    }
+
+    flipCards = duplicates;
+    card = flipCards;
+    shuffleArray(flipCards);
+}())
+
+function shuffleArray(flipCards) {
+    for (let i = flipCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [flipCards[i], flipCards[j]] = [flipCards[j], flipCards[i]];
+    }
+    createCards(flipCards);
+}
+
+function createCards(flipCards) {
+    let container = document.getElementById('game-container');
+
+    container.innerHTML = flipCards.join("");
+    cards = document.querySelectorAll('.card');
+}
+
+function flipCard() {
     if (lockBoard) return;
+    moveCount++;
+    $('.moves').text(moveCount);
     this.classList.add('flip');
 
     if (!hasFlippedCard) {
     hasFlippedCard = true;
-    firstCard = this;
+    firstCard = this.children[0].dataset['source'];
     return
+    }
+
+    secondCard = this.children[0].dataset['source'];
+    hasFlippedCard = false;
+
+    checkForMatch();
 }
 
-secondCard = this;
-hasFlippedCard = false;
-
-checkForMatch();
-}
 //checks cards are matching//
 function checkForMatch() {
-    if (firstCard.dataset.name === secondCard.dataset.name) {
+    if (firstCard === secondCard) {
         disableCards();
         return
     }
@@ -30,27 +68,27 @@ function checkForMatch() {
 }
 //match cards don`t flip back if clicked//
 function disableCards() {
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCrad);
+    let cardOne = $('div [data-source="'+firstCard+'"]');
+    cardOne.parent().off('click', flipCard);
 }
 
 function unflipCards() {
     lockBoard = true;
+    let cardOne = $('div [data-source="'+firstCard+'"]'),
+        cardTwo = $('div [data-source='+secondCard+']');
     setTimeout(() => {
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
+        cardOne.parent().removeClass('flip');
+        cardTwo.parent().removeClass('flip');
         lockBoard = false;
     }, 1500);
 }
 
-(function shuffle() {
-    cards.forEach(card => {
-        let shuffPosi = Math.floor(Math.random() * 16);
-        card.style.order = shuffPosi;
-        console.log(shuffle)
-    })
-})();
+function resetGame() {
+    $('.card').removeClass('flip');
 
-cards.forEach(card => card.addEventListener('click', flipCrad))
+    shuffleArray(cards);
+}
+
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 
