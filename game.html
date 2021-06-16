@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="assets/css/style.css">
     <title>Memory Game</title>
   </head>
   <body>
@@ -33,85 +34,12 @@
                    </div>
                 </div>
             </div>
-            <div class="container-game">
-                <div class="card" data-name="purple-skin">
-                    <img class="front-card" src="assets/images/battleland-3.jpg" alt="purple-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="purple-skin">
-                    <img class="front-card" src="assets/images/battleland-3.jpg" alt="purple-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="pharaoh-skin">
-                    <img class="front-card" src="assets/images/battleland-4.jpg" alt="pharaoh-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="pharaoh-skin">
-                    <img class="front-card" src="assets/images/battleland-4.jpg" alt="pharaoh-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-            </div>
-        
-
-            <div class="container-game">
-                <div class="card" data-name="pijama-skin">
-                    <img class="front-card" src="assets/images/battleland-5.jpg" alt="pijama-skin">
-                    <img  class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="pijama-skin">
-                    <img class="front-card" src="assets/images/battleland-5.jpg" alt="pijama-skin">
-                    <img  class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="karate-skin">
-                    <img class="front-card" src="assets/images/battleland-6.jpg" alt="karate-skin">
-                    <img  class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="karate-skin">
-                    <img class="front-card" src="assets/images/battleland-6.jpg" alt="karate-skin">
-                    <img  class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-             </div>
-
-            <div class="container-game">
-                <div class="card" data-name="gun-skin">
-                    <img class="front-card" src="assets/images/battleland-7.jpg" alt="gun-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="gun-skin">
-                    <img class="front-card" src="assets/images/battleland-7.jpg" alt="gun-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="rudolf-skin">
-                    <img class="front-card" src="assets/images/battleland-8.jpg" alt="rudolf-skin">
-                    <img class="back-card"src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="rudolf-skin">
-                    <img class="front-card" src="assets/images/battleland-8.jpg" alt="rudolf-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-            </div>
-           <div class="container-game">
-                <div class="card" data-name="samurai-skin">
-                    <img class="front-card" src="assets/images/battleland-9.jpg" alt="samurai-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="samurai-skin">
-                    <img class="front-card" src="assets/images/battleland-9.jpg" alt="samurai-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="space-skin">
-                    <img class="front-card" src="assets/images/battleland-10.jpg" alt="space-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-                 <div class="card" data-name="space-skin">
-                    <img class="front-card" src="assets/images/battleland-10.jpg" alt="space-skin">
-                    <img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">
-                </div>
-            </div>
+            <div>Moves: <span class="moves"></span></div>
+            <div class="container-game" id="game-container"></div>
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3 class="reset-button">Reset</h3>
+                        <button onclick="resetGame()" class="reset-button">Reset</button>
                         <h3 class="reset-button">Moves</h3>
                      
                     </div>
