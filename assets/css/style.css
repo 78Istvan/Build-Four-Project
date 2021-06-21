@@ -95,7 +95,6 @@ img {
     justify-content: center;
     align-items: center;
     max-width: 800px;
-   
 }
 
 .card {
@@ -105,7 +104,6 @@ img {
     transform-style: preserve-3d;
     transition: transform .5s;
     width: 21%;
-   
 }
 .front-card {
     position: relative;
@@ -128,6 +126,7 @@ img {
 .card.flip {
     transform: rotateY(180deg);
      -webkit-transform: rotateY(180deg);
+     -webkit-transition: -webkit-transform 1s;
 }
 
 .game-buttons {
