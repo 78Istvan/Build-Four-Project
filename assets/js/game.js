@@ -85,7 +85,8 @@ function unflipCards() {
 
 function resetGame() {
     $('.card').removeClass('flip');
-
+    moveCount=0;
+     $('.moves').text(moveCount);
     shuffleArray(cards);
 }
 
