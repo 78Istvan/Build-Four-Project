@@ -58,7 +58,7 @@ function flipCard() {
     checkForMatch();
 }
 
-//checks cards are matching//
+//metch cards will be desabled to flip
 function checkForMatch() {
     if (firstCard === secondCard) {
         disableCards();
@@ -66,12 +66,12 @@ function checkForMatch() {
     }
     unflipCards();
 }
-//match cards don`t flip back if clicked//
+//match cards don`t flip back if clicked
 function disableCards() {
     let cardOne = $('div [data-source="'+firstCard+'"]');
     cardOne.parent().off('click', flipCard);
 }
-//unmatchig cards flips back 
+//unmatchig cards flips back after 1s and you can move to another card to flip
 function unflipCards() {
     lockBoard = true;
     let cardOne = $('div [data-source="'+firstCard+'"]'),
@@ -88,9 +88,12 @@ function resetGame() {
     moveCount=0;
      $('.moves').text(moveCount);
     shuffleArray(cards);
+    shuffleArray();
     
 }
-
+function gameOver() {
+    if 
+}
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 

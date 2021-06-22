@@ -26,7 +26,7 @@
                             <div class="row game-buttons">
                                 <div class="col-md-3"><div class="navi">
                                     <a href="index.html"  class="btn btn-danger drive">QuiteGame</a></div></div>
-                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-success drive reset-button" onclick="resetGame()" onclick="shuffleArray();">Reset</button></div></div>
+                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-success drive reset-button" onclick="resetGame()">Reset</button></div></div>
                                 <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-info drive"><span class="moves">Moves:</span></button></div></div>
                            </div>
                            </div>
@@ -34,7 +34,9 @@
                    </div>
                 </div>
             </div>
-         <div class="container-game" id="game-container"></div>
+         <div class="container-game" id="game-container">
+             <p id="winnerText"></p>
+         </div>
             <div class="container">
                 <div class="row">
                     <div class="col">
