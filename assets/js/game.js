@@ -39,7 +39,7 @@ function createCards(flipCards) {
     container.innerHTML = flipCards.join("");
     cards = document.querySelectorAll('.card');
 }
-
+//turn up cards and check are they matching or not
 function flipCard() {
     if (lockBoard) return;
     moveCount++;
@@ -71,7 +71,7 @@ function disableCards() {
     let cardOne = $('div [data-source="'+firstCard+'"]');
     cardOne.parent().off('click', flipCard);
 }
-
+//unmatchig cards flips back 
 function unflipCards() {
     lockBoard = true;
     let cardOne = $('div [data-source="'+firstCard+'"]'),
@@ -82,12 +82,13 @@ function unflipCards() {
         lockBoard = false;
     }, 1000);
 }
-
+//reset moves and card board
 function resetGame() {
     $('.card').removeClass('flip');
     moveCount=0;
      $('.moves').text(moveCount);
     shuffleArray(cards);
+    
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
