@@ -2,15 +2,17 @@
 let cards = [],
     flipCardsArray = [],
     flippedCardsCount = 0,
-    numberOfPairs = 8; 
+    numberOfPairs = 8, 
+    level = 1;
 
 let hasFlippedCard = false;
-let lockBoard = false;
+let lockBoard = false; 
 let firstCard, secondCard, moveCount=0;
 
 (function createCardsArray() {
     let flipCards = [],
         duplicates = [];
+        level === 2 ? numberOfPairs = 6 : level === 3 ? numberOfPairs = 8 : numberOfPairs = 4;
     for(let x=1;  numberOfPairs >= x; x++) {
         flipCards.push('<div class="card" data-name="space-skin">' +
                         '<img class="front-card" data-source="'+ x +'" src="assets/images/battleland-'+ x +'.jpg" alt="space-skin">' +
@@ -102,8 +104,8 @@ function resetGame() {
 function gameOver() {
     flippedCardsCount = 0;
     $(".steps-count").text(moveCount);
+    level === 3 ? level = 0: level++
     openModal();
-
 }
 
 function openModal() {
