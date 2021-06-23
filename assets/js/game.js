@@ -1,5 +1,6 @@
-//flip the cards//
-let cards = [];
+
+let cards = [],
+    flipCardsArray = [];
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -21,11 +22,12 @@ let firstCard, secondCard, moveCount=0;
     }
 
     flipCards = duplicates;
-    card = flipCards;
-    shuffleArray(flipCards);
+    flipCardsArray = flipCards;
+    shuffleArray();
 }())
 
-function shuffleArray(flipCards) {
+function shuffleArray() {
+    let flipCards = [...flipCardsArray];
     for (let i = flipCards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [flipCards[i], flipCards[j]] = [flipCards[j], flipCards[i]];
@@ -38,6 +40,7 @@ function createCards(flipCards) {
 
     container.innerHTML = flipCards.join("");
     cards = document.querySelectorAll('.card');
+    cards.forEach(card => card.addEventListener('click', flipCard));
 }
 //turn up cards and check are they matching or not
 function flipCard() {
@@ -86,14 +89,13 @@ function unflipCards() {
 function resetGame() {
     $('.card').removeClass('flip');
     moveCount=0;
+    cards=[];
      $('.moves').text(moveCount);
-    shuffleArray(cards);
     shuffleArray();
     
 }
 function gameOver() {
-    if 
 }
-cards.forEach(card => card.addEventListener('click', flipCard));
+
 
 
