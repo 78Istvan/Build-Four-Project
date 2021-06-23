@@ -1,6 +1,8 @@
 
 let cards = [],
-    flipCardsArray = [];
+    flipCardsArray = [],
+    flippedCardsCount = 0,
+    numberOfPairs = 8; 
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -9,7 +11,7 @@ let firstCard, secondCard, moveCount=0;
 (function createCardsArray() {
     let flipCards = [],
         duplicates = [];
-    for(let x=1; 8 >= x; x++) {
+    for(let x=1;  numberOfPairs >= x; x++) {
         flipCards.push('<div class="card" data-name="space-skin">' +
                         '<img class="front-card" data-source="'+ x +'" src="assets/images/battleland-'+ x +'.jpg" alt="space-skin">' +
                         '<img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">' +
@@ -64,7 +66,10 @@ function flipCard() {
 //metch cards will be desabled to flip
 function checkForMatch() {
     if (firstCard === secondCard) {
+        flippedCardsCount++;
+
         disableCards();
+        flippedCardsCount === numberOfPairs ? gameOver() : false;
         return
     }
     unflipCards();
@@ -95,7 +100,25 @@ function resetGame() {
     
 }
 function gameOver() {
+    flippedCardsCount = 0;
+    $(".steps-count").text(moveCount);
+    openModal();
+
 }
+
+function openModal() {
+    let modal = $('.game-over-modal');
+    modal.toggle();
+}
+
+function closeModal() {
+    let modal = $('.game-over-modal');
+    modal.toggle();
+    resetGame()
+
+}
+   
+
 
 
 
