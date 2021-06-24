@@ -99,6 +99,24 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 # Technologies used
 
+## Languages used 
+
+* HTML5
+* CSS3
+## Frameworks, Libraries & Programs Used
+
+*  [Bootstrap 5.0.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  * Bootstrap was used to assist with the responsiveness and styling of the website.
+* Hover:css
+  * Hover.css was used on the Navbar with underline decoration
+
+* [Git](https://gitpod.io/workspaces/)
+  * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub](https://github.com/)
+  * GitHub is used to store the projects code after being pushed from Git.
+* [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQjw0caCBhCIARIsAGAfuMww-ltoyDwB6ZrAlyHF7kvDAEL_HD6_6Wdy3yEckSbSgu3D-SvI5QcaAthnEALw_wcB)
+  * Balsamiq was used to create the wireframes during the design process.
+
 ## Languages used
 ## Frameworks, Libraties, and Programs used
 
