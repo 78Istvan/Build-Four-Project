@@ -114,22 +114,37 @@ to to stick to the game and use them memory skills more and more.
 
 * HTML5
 * CSS3
+<<<<<<< HEAD
 * JavaScript
 
+=======
+>>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 ## Frameworks, Libraries & Programs Used
 
 *  [Bootstrap 5.0.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   * Bootstrap was used to assist with the responsiveness and styling of the website.
+<<<<<<< HEAD
+=======
+* Hover:css
+  * Hover.css was used on the Navbar with underline decoration
+
+>>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 * [Git](https://gitpod.io/workspaces/)
   * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/)
   * GitHub is used to store the projects code after being pushed from Git.
 * [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQjw0caCBhCIARIsAGAfuMww-ltoyDwB6ZrAlyHF7kvDAEL_HD6_6Wdy3yEckSbSgu3D-SvI5QcaAthnEALw_wcB)
   * Balsamiq was used to create the wireframes during the design process.
+<<<<<<< HEAD
 * [jQuery](https://jquery.com/) 
   * jQuery was used in the game JavaScript code
 
 
+=======
+
+## Languages used
+## Frameworks, Libraties, and Programs used
+>>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 
 # Testing
 

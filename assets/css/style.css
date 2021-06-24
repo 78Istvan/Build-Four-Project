@@ -105,6 +105,7 @@ img {
     transform-style: preserve-3d;
     transition: transform .5s;
     width: 21%;
+   
 }
 .front-card {
     position: relative;
@@ -112,12 +113,19 @@ img {
     transform: rotateY(180deg);
     width: 100%;
     height: 100%;
+   
+    
 }
 .back-card {
     width: 100%;
     height: 100%;
     position: absolute;
+<<<<<<< HEAD
     backface-visibility: hidden;
+=======
+   
+   
+>>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 }
 .card:active {
     transform: scale(0.97);
