@@ -133,12 +133,14 @@ to to stick to the game and use them memory skills more and more.
 
 # Testing
 
+* known bugs: Safari and Mozzilla Firefox browsers doesn't work
+
 # Deployment 
 
 To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istvan/Build-Four-Project) these are the steps to take.
 
 1. Log in to GitHub.
-2. From the list of repos choose bozy15/ms2-whacka-mole
+2. From the list of repos choose 78Istvan/Build-Four-Project
 3. Near the top of the page there will be the menu items, click on Settings
 4. On the left side of the screen there is another list of items.
 5. Scroll down to the second last item which will be Pages and select it.
