@@ -44,7 +44,7 @@
 
 - A memory game with lots of colors and very easy functioning
 
-- Use all my knowlidge about the languages I learnd so far, such as Javascript, jQuey, HTML and CSS.
+- Use all my knowledge about the languages I learnd so far, such as Javascript, jQuey, HTML and CSS.
 
 
 
@@ -114,41 +114,71 @@ to to stick to the game and use them memory skills more and more.
 
 * HTML5
 * CSS3
-<<<<<<< HEAD
 * JavaScript
 
-=======
->>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 ## Frameworks, Libraries & Programs Used
 
 *  [Bootstrap 5.0.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
   * Bootstrap was used to assist with the responsiveness and styling of the website.
-<<<<<<< HEAD
-=======
-* Hover:css
-  * Hover.css was used on the Navbar with underline decoration
-
->>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 * [Git](https://gitpod.io/workspaces/)
   * Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 * [GitHub](https://github.com/)
   * GitHub is used to store the projects code after being pushed from Git.
 * [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQjw0caCBhCIARIsAGAfuMww-ltoyDwB6ZrAlyHF7kvDAEL_HD6_6Wdy3yEckSbSgu3D-SvI5QcaAthnEALw_wcB)
   * Balsamiq was used to create the wireframes during the design process.
-<<<<<<< HEAD
 * [jQuery](https://jquery.com/) 
   * jQuery was used in the game JavaScript code
 
 
-=======
-
-## Languages used
-## Frameworks, Libraties, and Programs used
->>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 
 # Testing
 
 * known bugs: Safari and Mozzilla Firefox browsers doesn't work
+
+## Manual Testing
+
+* The game has four main buttons linked to four different pages have been tested 
+  during the work with the project to ensure they are linked correctly.
+
+* Game moves counter tested and checked while game play, increment the numbers after every clicks.
+
+* Pop up message appear when game is end.
+
+* Reset button shuffles the cards any time it have been pressed.
+
+* The main thing of the project is the game have been tested multiple times
+  by family members and my selfe on different devices.
+
+## Functionality Testing 
+
+* I used Google Chrome Development Tools to during the whole process to debug, fix, and modify codes.
+
+## Code Validation
+
+ [W3C Markup Validator](https://jigsaw.w3.org/css-validator/)
+
+   ![CSS Validator Screenshot](assets/images/CSS-validator.png) 
+
+  * Bootstrap 5 couse some errors in validation, probably because some missing up dates in validator.
+
+  [W3C HTML Validator](https://validator.w3.org/nu/)
+
+- Home page
+![4 HTML Validator Screenshot](assets/images/W3C-index.html-validator.png)
+- Introduction page
+![4 HTML Validator Screenshot](assets/images/W3C-introduction.html-validator.png)
+- Game page
+![4 HTML Validator Screenshot](assets/images/W3C-geme.html-validator.png)
+- Contact page
+![4 HTML Validator Screenshot](assets/images/W3C-contact.html-validator.png)
+
+## Performance Testing
+
+- Use Lighthouse tool for testing
+
+### Chrome Light House Screenshot 
+
+![Light house screenshot](assets/images/chrome-light-house.png)
 
 # Deployment 
 

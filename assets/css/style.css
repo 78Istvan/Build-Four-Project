@@ -120,12 +120,7 @@ img {
     width: 100%;
     height: 100%;
     position: absolute;
-<<<<<<< HEAD
     backface-visibility: hidden;
-=======
-   
-   
->>>>>>> c0791c85b62207370e4ebca34be0853f441cc56a
 }
 .card:active {
     transform: scale(0.97);
