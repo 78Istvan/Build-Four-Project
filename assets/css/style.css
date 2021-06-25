@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 .main-container {
-    margin: 50px auto;
+    margin: 30px auto 0;
 }
 .head-text {
     text-align: center;
@@ -22,13 +22,16 @@ body {
 /*--navbar buttons---*/
 .navi {
     text-align: center;
+   
 }
 #navi {
     padding-top: 1rem;
+    display: flex;
 }
 .btn {
     margin-bottom: 0.7rem;
     width: 7rem;
+    margin-right: 1rem;
 }
 .front-img {
     width: 100%;

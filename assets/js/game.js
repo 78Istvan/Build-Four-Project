@@ -57,6 +57,7 @@ function createCards(flipCards) {
 
 //turn up cards and check are they matching or not
 function flipCard() {
+    if (!this.classList.contains('flip')) {
     firstFlip === 0 ? startTimer() : firstFlip++;
     if (lockBoard) return;
     moveCount++;
@@ -73,6 +74,7 @@ function flipCard() {
     hasFlippedCard = false;
 
     checkForMatch();
+}
 }
 
 //metch cards will be desabled to flip
