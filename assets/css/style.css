@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 .main-container {
-    margin: auto;
+    margin: 50px auto;
 }
 .head-text {
     text-align: center;

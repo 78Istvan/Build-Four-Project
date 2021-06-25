@@ -219,3 +219,7 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 * All text was written by Istvan Juhasz
 
 ## Acknowledgements
+
+* known bug Double click on turned card meks the game end
+
+* testing variable nubers changed to 1 pair to make testing easier

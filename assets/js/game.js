@@ -1,23 +1,31 @@
-
 let cards = [],
     flipCardsArray = [],
     flippedCardsCount = 0,
     numberOfPairs = 8, 
-    level = 1;
+    level = 1,
+    setText = {
+        levelString: 'Are you ready for the next level?',
+        lastLevelString: 'CONGRATULATIONS You have completed all the levels, would you like another game?'
+    },
+    firstFlip = 0,
+    seconds = 0,
+    hasFlippedCard = false,
+    lockBoard = false,
+    firstCard, secondCard, moveCount=0;
 
-let hasFlippedCard = false;
-let lockBoard = false; 
-let firstCard, secondCard, moveCount=0;
+(function init() {
+    createCardsArray();
+}())
 
-(function createCardsArray() {
+function createCardsArray() {
     let flipCards = [],
         duplicates = [];
-        level === 2 ? numberOfPairs = 6 : level === 3 ? numberOfPairs = 8 : numberOfPairs = 4;
+    level === 2 ? numberOfPairs = 6 : level === 3 ? numberOfPairs = 8 : numberOfPairs = 4;
     for(let x=1;  numberOfPairs >= x; x++) {
         flipCards.push('<div class="card" data-name="space-skin">' +
-                        '<img class="front-card" data-source="'+ x +'" src="assets/images/battleland-'+ x +'.jpg" alt="space-skin">' +
-                        '<img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">' +
-                        '</div>');
+            '<img class="front-card" data-source="'+ x +'" src="assets/images/battleland-'+ x +'.jpg" alt="space-skin">' +
+            '<img class="back-card" src="assets/images/yellow-1.jpg" alt="yellow-top">' +
+            '</div>');
     }
 
     for(var i = 0; i< flipCards.length;++i){
@@ -28,7 +36,7 @@ let firstCard, secondCard, moveCount=0;
     flipCards = duplicates;
     flipCardsArray = flipCards;
     shuffleArray();
-}())
+}
 
 function shuffleArray() {
     let flipCards = [...flipCardsArray];
@@ -46,8 +54,10 @@ function createCards(flipCards) {
     cards = document.querySelectorAll('.card');
     cards.forEach(card => card.addEventListener('click', flipCard));
 }
+
 //turn up cards and check are they matching or not
 function flipCard() {
+    firstFlip === 0 ? startTimer() : firstFlip++;
     if (lockBoard) return;
     moveCount++;
     $('.moves').text(moveCount);
@@ -76,11 +86,13 @@ function checkForMatch() {
     }
     unflipCards();
 }
+
 //match cards don`t flip back if clicked
 function disableCards() {
     let cardOne = $('div [data-source="'+firstCard+'"]');
     cardOne.parent().off('click', flipCard);
 }
+
 //unmatchig cards flips back after 1s and you can move to another card to flip
 function unflipCards() {
     lockBoard = true;
@@ -92,35 +104,57 @@ function unflipCards() {
         lockBoard = false;
     }, 1000);
 }
+
 //reset moves and card board
 function resetGame() {
     $('.card').removeClass('flip');
     moveCount=0;
+    seconds=0;
+    level=1;
     cards=[];
-     $('.moves').text(moveCount);
-    shuffleArray();
+    $('.moves').text(moveCount);
+    createCardsArray();
     
 }
+
 function gameOver() {
     flippedCardsCount = 0;
-    $(".steps-count").text(moveCount);
-    level === 3 ? level = 0: level++
+    firstFlip = 0;
+    clearInterval(setTimer);
+    addTextToModal();
     openModal();
 }
 
+function addTextToModal() {
+    $(".steps-count").text(moveCount);
+    $(".level-display").text(level);
+    $(".second-count").text(seconds);
+    level === 3 ? $(".level-text").text(setText.lastLevelString) : $(".level-text").text(setText.levelString);
+}
+
 function openModal() {
+    moveCount=0;
+    seconds=0
+    level === 3 ? resetGame() : level++
     let modal = $('.game-over-modal');
     modal.toggle();
 }
 
 function closeModal() {
     let modal = $('.game-over-modal');
+    $(".time").text(seconds);
+    $('.moves').text(moveCount);
     modal.toggle();
-    resetGame()
-
+    createCardsArray()
 }
    
-
+function startTimer() {
+    firstFlip++
+    setTimer = setInterval(function () {
+        seconds++;
+        $(".time").text(seconds);
+    }, 1000);
+}
 
 
 
