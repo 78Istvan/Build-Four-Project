@@ -27,7 +27,8 @@
                                 <div class="col-md-3"><div class="navi">
                                     <a href="index.html"  class="btn btn-danger drive">QuiteGame</a></div></div>
                                 <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-success drive reset-button" onclick="resetGame()">Reset</button></div></div>
-                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-info drive"><span class="moves">Moves:</span></button></div></div>
+                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-info drive">Moves: <span class="moves"></span></button></div></div>
+                                <div class="col-md-3"><div class="navi"><button type="button" class="btn btn-info drive">Time: <span class="time"></span></button></div></div>
                            </div>
                            </div>
                        </div>
@@ -43,7 +44,9 @@
             </div>
             <div class="game-over-modal hidden">
                 <h2>Winner winner chicken dinner!</h2>
-                <p>You have finished the game in <span class="steps-count"></span> steps</p>
+                <p>You have completed level <span class="level-display"></span></p>
+                <p>You did it in <span class="steps-count"></span> steps and <span class="second-count"></span> seconds</p>
+                <p class="level-text"></p>
                 <button class="reset-game" onclick="closeModal()">Ok</button>
             </div>
         </section>
