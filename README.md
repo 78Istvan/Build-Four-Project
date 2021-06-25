@@ -180,6 +180,86 @@ to to stick to the game and use them memory skills more and more.
 
 ![Light house screenshot](assets/images/chrome-light-house.png)
 
+### End of the game pop up message testing 
+
+* I changed numberOfPairs variable from 8 to 1  during pop up message testing to make 
+the testing easier. This technic saved me a lots of time, because I didn't have to solve the full game 
+avery time I tested the pop up window because I had only 1 pair in my card table.
+
+### Known bug and solving
+
+* The used CSS for flipping card didn't work on Safari Browser and Mozzilla Fire Fox so I had to 
+find what CSS can solv my problem.
+ 
+  * The first used Css code
+
+```
+.card {
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    width: 21%;
+    
+   
+}
+.front-card {
+    position: relative;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    
+   
+    
+}
+.back-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    
+}
+```
+  * Code used to fix the problem 
+
+```
+.card {
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;	
+    width: 21%;
+    background-color: transparent;
+   
+}
+.front-card {
+    position: relative;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    
+}
+.back-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+
+```
+   The difference is only the last line in all of the classes, but they 
+solved me a big bug in my project.
+
+
+
+
 # Deployment 
 
 To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istvan/Build-Four-Project) these are the steps to take.
@@ -220,6 +300,5 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 
 ## Acknowledgements
 
-* known bug Double click on turned card meks the game end
 
-* testing variable nubers changed to 1 pair to make testing easier
+
