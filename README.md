@@ -152,6 +152,28 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 * Very easy and simple usage with nice colorful big buttons.
 
+![game buttons](assets/images/readme-buttons.png)
+
+* A nice and elegant title of the game to tell what is the page about it.
+
+![title of the page](assets/images/readme-title.png)
+
+* An introduction text about the game.
+
+![Introduction text](assets/images/readme-intro.png)
+
+* An active counter and timer buttons 
+
+![timer and counter buttons](assets/images/readme-active.png)
+
+* A contact form to get contact with the game owner.
+
+![contact form](assets/images/readme-form.png)
+
+* A big and easy to use game board
+
+![game board](assets/images/readme-board.png)
+
 [Back To Table of content](#table-of-content)
 
 # Technologies used
