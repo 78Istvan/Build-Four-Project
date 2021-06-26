@@ -1,4 +1,6 @@
-# Build-Four-Project
+# Build-Four-Project 
+
+## Memory Game
 
 ![alt memory game main image](assets/images/readme.png)
 
@@ -6,13 +8,17 @@
 
 # Table of Content
 
- [User experience UX](#user-experience)
+1. [User experience UX](#user-experience)
 
-  [User stories](#user-stories)
+- [User stories](#user-stories)
 
-  [Design](#design)
+2. [Design](#design)
+
+* [Color](#colors)
+
+* [Styling](#styling)
  
- [Wireframes](#wireframes)
+3. [Wireframes](#wireframes)
 
  - [Phone size wireframe](#phone-size-wireframe)
  - [Tablet size wireframe](#tablet-size-wireframe)
@@ -22,9 +28,31 @@
 
 [Technologies used](#technologies-used)
 
+* [Languages used](#languages-used)
+
+* [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
+
 [Testing](#testing)
 
+* [Manual Testing](#manual-testing)
+
+* [Functionality Testing](#functionality-testing)
+
+* [Code Validation](#code-validation)
+
+* [Performance Testing](#performance-testing)
+
+  * [End of the game pop up message testing](#end-of-the-game-pop-up-message-testing)
+
+  * [Known bug and solving](#known-bug-and-solving)
+
+
+
 [Deployment](#deployment)
+
+* [Deploy Memory Game](#deploy-memory-game)
+
+* [How to run this project locally](#how-to-run-thi-project-locally)
 
 [Credits](#credits)
 
@@ -80,6 +108,8 @@
     
  - buttons used: the classic [bootstrap button](https://getbootstrap.com/docs/5.0/components/buttons/) colors
 
+ [Back To Table of content](#table-of-content)
+
 ## Wireframes
 
 
@@ -94,6 +124,9 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 ### Desktop size wireframe
 
 ![alt text](assets/images/memory-laptop-1.jpg)  
+
+[Back To Table of content](#table-of-content)
+
 # Features
 
 - There are three levels built in the game to keep the user more excited, with a popup message on the end of the game.
@@ -107,6 +140,7 @@ to to stick to the game and use them memory skills more and more.
 
 * Very easy and simple usage with nice colorful big buttons.
 
+[Back To Table of content](#table-of-content)
 
 # Technologies used
 
@@ -129,7 +163,7 @@ to to stick to the game and use them memory skills more and more.
 * [jQuery](https://jquery.com/) 
   * jQuery was used in the game JavaScript code
 
-
+[Back To Table of content](#table-of-content)
 
 # Testing
 
@@ -258,19 +292,23 @@ find what CSS can solv my problem.
 solved me a big bug in my project.
 
 
-
+[Back To Table of content](#table-of-content)
 
 # Deployment 
 
+### Deploy Memory Game
+
 To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istvan/Build-Four-Project) these are the steps to take.
 
-1. Log in to GitHub.
+1. Log in to GitHub and locate the GitHub Repository.
 2. From the list of repos choose 78Istvan/Build-Four-Project
 3. Near the top of the page there will be the menu items, click on Settings
 4. On the left side of the screen there is another list of items.
 5. Scroll down to the second last item which will be Pages and select it.
 6. Under Source click the dropdown menu and select Master
 7. Once selected the link will appear in a matter of seconds to the live site.
+
+[The live site address]( https://78istvan.github.io/Build-Four-Project/)
 
 ### How to run this project locally
 
@@ -285,6 +323,8 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 7. Type git clone followed by the copied URL.
 8. Press Enter and your clone will be created.
 
+[Back To Table of content](#table-of-content)
+
 # Credits
 
 ## Media
@@ -294,11 +334,30 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 
 ## Code
 
+* The Css and HTML code was written by the developer.
+
+* Some JavaScript ideas and inspiration was taken from Marina Ferreira`s [YouTube video](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+
+* [W3school](https://www.w3schools.com/js/) was used to get more understanding about javaScrip usage.
+
+* [Stack Overflow](https://stackoverflow.com/)helped to find the solutin of css effects, bootstrap default code overwright problems.
+
+
+
 ## Content
 
 * All text was written by Istvan Juhasz
 
 ## Acknowledgements
+
+* My mentor support, and advise
+
+* Slack students helps with advises how to fix bugs
+
+* My family, especially my kids support of live testing the game, and give me a very honest feedback about liked and unliked thing in the game.
+
+
+[Back To Table of content](#table-of-content)
 
 
 
