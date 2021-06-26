@@ -195,11 +195,11 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 * Game moves counter tested and checked while game play, increment the numbers after every clicks.
 
-* Pop up message appear when game is end.
+* Pop up message appear on the end of every game level.
 
 * Reset button shuffles the cards any time it have been pressed.
 
-* The main thing of the project is the game have been tested multiple times
+* The main thing of the project is the game, have been tested multiple times
   by family members and my selfe on different devices.
 
 ## Functionality Testing 
