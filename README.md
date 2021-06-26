@@ -24,15 +24,15 @@
  - [Tablet size wireframe](#tablet-size-wireframe)
  - [Desktop size wireframe](#desktop-size-wireframe)
 
-[Features](#features)
+4. [Features](#features)
 
-[Technologies used](#technologies-used)
+5. [Technologies used](#technologies-used)
 
 * [Languages used](#languages-used)
 
 * [Frameworks, Libraries & Programs Used](#frameworks-libraries-&-programs-used)
 
-[Testing](#testing)
+6. [Testing](#testing)
 
 * [Manual Testing](#manual-testing)
 
@@ -48,13 +48,19 @@
 
 
 
-[Deployment](#deployment)
+7. [Deployment](#deployment)
 
 * [Deploy Memory Game](#deploy-memory-game)
 
 * [How to run this project locally](#how-to-run-thi-project-locally)
 
-[Credits](#credits)
+8. [Credits](#credits)
+
+* [Media](#media)
+
+* [Content](#content)
+
+* [Acknowledgements](#acknowledgements)
 
 
 # User experience
@@ -64,7 +70,9 @@
  ### Project goal
 
    The main goal of this project to build a memory game to spend some enjoyable 
-   time and to give a user an attractive game board with clear images and bright colors.
+   time, and to give a user an attractive game board with clear images and bright colors
+  
+
 
  #### User Stories
 
@@ -73,6 +81,10 @@
 - A memory game with lots of colors and very easy functioning
 
 - Use all my knowledge about the languages I learnd so far, such as Javascript, jQuey, HTML and CSS.
+
+- This game made for fun reason, so there is no loose option in the game, even if there is a timer and moves counter, te player can't loose the game
+  
+- A memory game to play to relax and no pressure, with enjoyable images and easy functioning, however there is an option to competit with our selfe to check timer and counter serults.
 
 
 
@@ -86,7 +98,7 @@
 
 - To play on multiple devices.
 
-- To see my moves to compare and a pop up message on the end of the game.
+- To see my moves and time to compare and a pop up message on the end of the game levels.
 
 - To reset and start the game anytime.
 
@@ -129,14 +141,14 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 # Features
 
-- There are three levels built in the game to keep the user more excited, with a popup message on the end of the game.
+- There are three levels built in the game to keep the user more excited, with a popup message on the end of every level, where the player can choose to step to the next stage.
 
-- During the game a built in counter counting the player movements.
+- During the game a built in counter counting the player movements and the time counter checking the time.
 
-- End of the game popup message show the player a result about the number of movements, so the player can make a little competition to improve memory skills.
+- End of the levels a popup message shows the player a result about the number of movements, and the time, so the player can make a little competition to solve the game faster or with less moves.
 
-* The utilized images and colours are very simple and colorful to give the user a nice and happy feeling so they encourage the players 
-to to stick to the game and use them memory skills more and more.
+* The utilized images and colours are very simple and colorful to give the user a nice and happy feeling so they encourage the player
+  to stick to the game and use them memory skills to solve the game again.
 
 * Very easy and simple usage with nice colorful big buttons.
 
@@ -173,6 +185,13 @@ to to stick to the game and use them memory skills more and more.
 
 * The game has four main buttons linked to four different pages have been tested 
   during the work with the project to ensure they are linked correctly.
+
+*  There is a move counter in the game shows the player how many moves needed to solve the game,
+   and there is a time counter also to give a result to the player that how long it took.
+   The timer is keep going untill the player click the last card.
+   The player can't run out of time', can't loose the game, player can competit with his/her selfe to solve the game again
+   faster and faster time to time.
+     
 
 * Game moves counter tested and checked while game play, increment the numbers after every clicks.
 
@@ -354,7 +373,7 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 
 * Slack students helps with advises how to fix bugs
 
-* My family, especially my kids support of live testing the game, and give me a very honest feedback about liked and unliked thing in the game.
+* My family, especially my kids support of live testing the game, and give me a very honest feedback about liked and unliked things in the game.
 
 
 [Back To Table of content](#table-of-content)
