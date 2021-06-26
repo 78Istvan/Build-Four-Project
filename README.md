@@ -47,7 +47,6 @@
   * [Known bug and solving](#known-bug-and-solving)
 
 
-
 7. [Deployment](#deployment)
 
 * [Deploy Memory Game](#deploy-memory-game)
@@ -62,7 +61,6 @@
 
 * [Acknowledgements](#acknowledgements)
 
-
 # User experience
  
  ## User stories
@@ -72,7 +70,6 @@
    The main goal of this project to build a memory game to spend some enjoyable 
    time, and to give a user an attractive game board with clear images and bright colors
   
-
 
  #### User Stories
 
@@ -87,7 +84,6 @@
 - A memory game to play to relax and no pressure, with enjoyable images and easy functioning, however there is an option to competit with our selfe to check timer and counter serults.
 
 
-
 ##### As the user I want
 
 - A nice and cool looking game board with attractive images.
@@ -98,7 +94,7 @@
 
 - To play on multiple devices.
 
-- To see my moves and time to compare and a pop up message on the end of the game levels.
+- To see my moves and time to compare and a popup message on the end of the game levels.
 
 - To reset and start the game anytime.
 
@@ -116,14 +112,13 @@
 
  - font used: [google font](https://fonts.google.com/specimen/Fira+Sans)
 
- - images used: The image were from the Battleland online tablet game for study purpose only.
+ - images used: The images are from the Battleland online tablet game for study purpose only.
     
  - buttons used: the classic [bootstrap button](https://getbootstrap.com/docs/5.0/components/buttons/) colors
 
  [Back To Table of content](#table-of-content)
 
 ## Wireframes
-
 
 Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 ### Phone size wireframe
@@ -143,7 +138,7 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 - There are three levels built in the game to keep the user more excited, with a popup message on the end of every level, where the player can choose to step to the next stage.
 
-- During the game a built in counter counting the player movements and the time counter checking the time.
+- During the game a built-  in counter counting the player movements and the time counter checking the time.
 
 - End of the levels a popup message shows the player a result about the number of movements, and the time, so the player can make a little competition to solve the game faster or with less moves.
 
@@ -210,7 +205,7 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 *  There is a move counter in the game shows the player how many moves needed to solve the game,
    and there is a time counter also to give a result to the player that how long it took.
-   The timer is keep going untill the player click the last card.
+   The timer is keep going untill the player clicks the last card.
    The player can't run out of time', can't loose the game, player can competit with his/her selfe to solve the game again
    faster and faster time to time.
      
@@ -219,10 +214,10 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 * Pop up message appear on the end of every game level.
 
-* Reset button shuffles the cards any time it have been pressed.
+* Reset button shuffles the cards any time it has been pressed.
 
 * The main thing of the project is the game, have been tested multiple times
-  by family members and my selfe on different devices.
+  by family members and my own self on different devices.
 
 ## Functionality Testing 
 
@@ -257,14 +252,14 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 ### End of the game pop up message testing 
 
-* I changed numberOfPairs variable from 8 to 1  during pop up message testing to make 
-the testing easier. This technic saved me a lots of time, because I didn't have to solve the full game 
-avery time I tested the pop up window because I had only 1 pair in my card table.
+* I changed numberOfPairs variable from 8 to 1 during pop up message testing to make 
+the testing easier. This technic saved me a lot of time, because I did not have to solve the full game 
+every time I tested the pop up window, because I had only 1 pair in my card table.
 
 ### Known bug and solving
 
 * The used CSS for flipping card didn't work on Safari Browser and Mozzilla Fire Fox so I had to 
-find what CSS can solv my problem.
+find what CSS can solve my problem.
  
   * The first used Css code
 
@@ -305,7 +300,7 @@ find what CSS can solv my problem.
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform .5s;	
+    transition: transform .5s;  
     width: 21%;
     background-color: transparent;
    
@@ -327,11 +322,9 @@ find what CSS can solv my problem.
     -webkit-backface-visibility: hidden;
 }
 
-
 ```
    The difference is only the last line in all of the classes, but they 
 solved me a big bug in my project.
-
 
 [Back To Table of content](#table-of-content)
 
@@ -384,7 +377,6 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 * [Stack Overflow](https://stackoverflow.com/)helped to find the solutin of css effects, bootstrap default code overwright problems.
 
 
-
 ## Content
 
 * All text was written by Istvan Juhasz
@@ -393,12 +385,12 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 
 * My mentor support, and advise
 
-* Slack students helps with advises how to fix bugs
+* Slack students help with advises how to fix bugs
 
 * My family, especially my kids support of live testing the game, and give me a very honest feedback about liked and unliked things in the game.
 
-
 [Back To Table of content](#table-of-content)
+
 
 
 
