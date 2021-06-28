@@ -38,6 +38,8 @@
 
 * [Functionality Testing](#functionality-testing)
 
+* [Responsive testing](#responsive-testing)
+
 * [Code Validation](#code-validation)
 
 * [Performance Testing](#performance-testing)
@@ -125,9 +127,13 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 ### Phone size wireframe
 ![alt text](assets/images/memory-phone-1.jpg)
 
+[Back To Table of content](#table-of-content)
+
 ### Tablet size wireframe
 
 ![alt text](assets/images/memory-tablet-1.jpg)
+
+[Back To Table of content](#table-of-content)
 
 ### Desktop size wireframe
 
@@ -246,15 +252,21 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
     ![responsive tablet 768px](assets/images/resp-tablet.png)
 
+[Back To Table of content](#table-of-content)
+
 ## Code Validation
 
 1.  [W3C Markup Validator](https://jigsaw.w3.org/css-validator/)
+
+ Css validation
 
    ![CSS Validator Screenshot](assets/images/CSS-validator.png) 
 
   * Bootstrap 5 couse some errors in validation, probably because some missing up dates in validator.
 
  2. [W3C HTML Validator](https://validator.w3.org/nu/)
+
+ HTML validation
 
 - Home page
 ![4 HTML Validator Screenshot](assets/images/W3C-index.html-validator.png)
@@ -329,6 +341,7 @@ Two undefined variables
 One unused variable
 156	closeModal
 
+[Back To Table of content](#table-of-content)
 
 ## Performance Testing
 
