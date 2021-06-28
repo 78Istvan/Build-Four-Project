@@ -196,7 +196,7 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 # Testing
 
-* known bugs: Safari and Mozzilla Firefox browsers doesn't work
+
 
 ## Manual Testing
 
@@ -222,6 +222,12 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 ## Functionality Testing 
 
 * I used Google Chrome Development Tools to during the whole process to debug, fix, and modify codes.
+
+## Responsive testing
+
+* The project responsiveness tested on the  [Am I Responsive?](http://ami.responsivedesign.is/) and the [Responsinator](https://www.responsinator.com/) websites and also tested during the project process in Google Chrome tool.
+
+
 
 ## Code Validation
 
