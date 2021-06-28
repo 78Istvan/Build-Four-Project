@@ -227,17 +227,33 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 * The project responsiveness tested on the  [Am I Responsive?](http://ami.responsivedesign.is/) and the [Responsinator](https://www.responsinator.com/) websites and also tested during the project process in Google Chrome tool.
 
+   * Am I Responsive screenshot
 
+   ![AmIResponsive](assets/images/resp-amI.png)
+
+   * Responsinator screenshots
+
+   1. Android 412px
+
+   ![android 412px](assets/images/resp-android.png)
+
+   2. iPhone8 375px
+
+    ![iPhone](assets/images/respiPhone8.png)
+
+    3. iPad 768px
+
+    ![responsive tablet 768px](assets/images/resp-tablet.png)
 
 ## Code Validation
 
- [W3C Markup Validator](https://jigsaw.w3.org/css-validator/)
+1.  [W3C Markup Validator](https://jigsaw.w3.org/css-validator/)
 
    ![CSS Validator Screenshot](assets/images/CSS-validator.png) 
 
   * Bootstrap 5 couse some errors in validation, probably because some missing up dates in validator.
 
-  [W3C HTML Validator](https://validator.w3.org/nu/)
+ 2. [W3C HTML Validator](https://validator.w3.org/nu/)
 
 - Home page
 ![4 HTML Validator Screenshot](assets/images/W3C-index.html-validator.png)
@@ -247,6 +263,71 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 ![4 HTML Validator Screenshot](assets/images/W3C-geme.html-validator.png)
 - Contact page
 ![4 HTML Validator Screenshot](assets/images/W3C-contact.html-validator.png)
+
+3. [JSHint testing](https://jshint.com/)
+
+CONFIGURE
+Metrics
+There are 17 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 13 statements in it, while the median is 4.
+
+The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+29 warnings
+12	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+29	Missing semicolon.
+32	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+34	Expected an assignment or function call and instead saw an expression.
+35	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+53	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+53	'spread operator' is only available in ES6 (use 'esversion: 6').
+54	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+55	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+56	'destructuring assignment' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+62	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+66	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+72	Expected an assignment or function call and instead saw an expression.
+80	['source'] is better written in dot notation.
+81	Missing semicolon.
+84	['source'] is better written in dot notation.
+97	Expected an assignment or function call and instead saw an expression.
+98	Missing semicolon.
+105	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+112	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+114	'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+145	Expected an assignment or function call and instead saw an expression.
+150	Missing semicolon.
+151	Expected an assignment or function call and instead saw an expression.
+151	Missing semicolon.
+152	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+157	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+161	Missing semicolon.
+165	Missing semicolon.
+Two undefined variables
+75	$
+105	$
+112	$
+113	$
+123	$
+128	$
+142	$
+143	$
+144	$
+145	$
+145	$
+152	$
+157	$
+158	$
+159	$
+168	$
+136	setTimer
+166	setTimer
+One unused variable
+156	closeModal
+
 
 ## Performance Testing
 
