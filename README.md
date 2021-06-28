@@ -68,7 +68,8 @@
  ### Project goal
 
    The main goal of this project to build a memory game to spend some enjoyable 
-   time, and to give a user an attractive game board with clear images and bright colors
+   time, and to give a user an attractive game board with clear images and bright colors. The images downloaded to the project with study pourpose only and 
+    they are belonging to the Battlelend online mobile game owner or company.
   
 
  #### User Stories

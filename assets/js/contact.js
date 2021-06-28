@@ -1,4 +1,4 @@
-const btn = document.getElementById('contact-button');
+const btn = document.getElementById('button');
 
 document.getElementById('form')
  .addEventListener('submit', function(event) {
@@ -6,8 +6,8 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'Project-four';
+   const serviceID = 'service_rfgs7yp';
+   const templateID = 'template_5a9ljvv';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {

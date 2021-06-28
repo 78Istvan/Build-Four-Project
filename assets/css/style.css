@@ -94,6 +94,9 @@ img {
 .sub-btn {
     text-align: center;
 }
+#message {
+    height: 85px;
+}
 /*game*/
 
 .container-game {
