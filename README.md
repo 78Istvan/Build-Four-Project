@@ -82,9 +82,9 @@
 
 - Use all my knowledge about the languages I learnd so far, such as Javascript, jQuey, HTML and CSS.
 
-- This game made for fun reason, so there is no loose option in the game, even if there is a timer and moves counter, te player can't loose the game
+- This game made for fun, so there is no loose option in the game, even if there is a timer and moves counter, the player can't loose the game.
   
-- A memory game to play to relax and no pressure, with enjoyable images and easy functioning, however there is an option to competit with our selfe to check timer and counter serults.
+- Build a memory game to play and relax with no pressure, with enjoyable images and easy functioning, however there is an option to competit with ourselfe to check timer and counter results.
 
 
 ##### As the user I want
@@ -110,14 +110,15 @@
  - The colors have been used from an online tablet game main colors called Battleland, so the two basic colors
  are yellow for text [HEX #F1C40F](https://www.google.com/search?q=%23F1C40F&rlz=1C1GCEA_enIE925IE925&oq=%23F1C40F&aqs=chrome..69i57j0i30l9.3173j0j4&sourceid=chrome&ie=UTF-8) 
  and the blue for background [HEX #303FDC](https://www.google.com/search?q=%23303FDC&rlz=1C1GCEA_enIE925IE925&oq=%23303FDC&aqs=chrome..69i57.4893j0j9&sourceid=chrome&ie=UTF-8) 
+ - Colorful nice and big buttons with the Bootstrap classic button colors.
 
  ### Styling 
 
- - font used: [google font](https://fonts.google.com/specimen/Fira+Sans)
+ - font used: [google font](https://fonts.google.com/specimen/Fira+Sans).
 
  - images used: The images are from the Battleland online tablet game for study purpose only.
     
- - buttons used: the classic [bootstrap button](https://getbootstrap.com/docs/5.0/components/buttons/) colors
+ - buttons used: the classic [bootstrap buttons](https://getbootstrap.com/docs/5.0/components/buttons/).
 
  [Back To Table of content](#table-of-content)
 
@@ -164,11 +165,11 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 
 ![Introduction text](assets/images/readme-intro.png)
 
-* An active counter and timer buttons 
+* An active counter and timer button
 
 ![timer and counter buttons](assets/images/readme-active.png)
 
-* A contact form to get contact with the game owner.
+* A contact form to get contact with the game owner, to share ideas how to improve the game more funtional , or better style.
 
 ![contact form](assets/images/readme-form.png)
 
@@ -224,11 +225,15 @@ Wireframes are availabe in tree sizes phone, tablet, and desktop size.
 * Reset button shuffles the cards any time it has been pressed.
 
 * The main thing of the project is the game, have been tested multiple times
-  by family members and my own self on different devices.
+  by family members and my own self on different devices and screen sizes.
 
 ## Functionality Testing 
 
 * I used Google Chrome Development Tools to during the whole process to debug, fix, and modify codes.
+
+* The project responsive and functional testing have been checked on Chrome, Safari, Opera, Mozzilla FireFox, ans Edge browsers.
+
+* The project responsive and functional testing have been done on Iphone, Ipad, Macbook Air 13", Dell laptop 15", and Android Phone.
 
 ## Responsive testing
 
@@ -475,7 +480,7 @@ To deploy Memory Game to GitHub Pages from its [repo](https://github.com/78Istva
 
 * [W3school](https://www.w3schools.com/js/) was used to get more understanding about javaScrip usage.
 
-* [Stack Overflow](https://stackoverflow.com/)helped to find the solutin of css effects, bootstrap default code overwright problems.
+* [Stack Overflow](https://stackoverflow.com/) helped to find the solutin of css effects, bootstrap default code overwright problems.
 
 
 ## Content
